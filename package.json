@@ -1,0 +1,25 @@
+{
+  "name": "ai-rotator",
+  "displayName": "AI Rotator",
+  "description": "Status-bar selector that enables exactly one AI extension at a time.",
+  "version": "1.0.0",
+  "publisher": "local-user",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "main": "extension/extension.js",
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:airotator.selectProvider"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "airotator.selectProvider",
+        "title": "AI Rotator: Select Provider"
+      }
+    ]
+  },
+  "dependencies": {}
+}
+
